@@ -3,7 +3,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="App.css" />
-    <script src="./components/App.js"></script>
+    <script type="module" src="./components/App.js"></script>
     <style>
       body{
         width: 100%;
@@ -22,6 +22,12 @@
       <wc-router>
       <fabs-logo></fabs-logo>
       <back-grid id="grid"></back-grid>
+      <!-- <fabs-about></fabs-about> -->
+
+
+      <wc-route path="/" title="Home" component="wc-home"></wc-route>
+      <wc-route path="/about" title="About Us" component="fabs-about"></wc-route>
+
       
         
         
@@ -32,8 +38,6 @@
    
     <script type="module" src="./components/router.js"></script>
     <script type="module" src="./components/index.js"></script>
-    <script type="module" src="./components/cubethree.js"></script>
-    
   </body>
   </html>
 
